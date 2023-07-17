@@ -1,0 +1,117 @@
+.bulid {
+    background-image:url(../../img/bulid-bg.svg);
+    background-repeat:no-repeat;
+    background-position:right bottom;
+    background-color:#012F34;
+}
+.bulid__container {
+    padding-top: 198px;
+    padding-bottom: 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+}
+.bulid__title {
+    @include title_1
+
+}
+
+.bulid__list_box {
+    &::before{
+        content:"";
+        display: block;
+        width:  72px;
+        height: 72px;
+        background-image:url(../../img/bulid1.svg);
+        background-repeat:no-repeat;
+        margin-right: 24px;
+        float: left;
+
+
+    }
+}
+.bulid__sub_title {
+
+    color: #F67E7E;
+font-size: 18px;
+font-weight: 700;
+line-height: 28px;
+max-width: 445px;
+
+}
+.bulid__sub_title:not(:last-child){
+    margin-bottom: 16px;
+}
+.bulis__text {
+    @include text_1
+
+}
+@media screen and (max-width:1000px) {
+
+    .bulid {
+    background-image:url(../../img/bulid-bg.svg);
+    background-repeat:no-repeat;
+    background-position:right top;
+    background-color:#012F34;
+    
+    padding: 100px 0;
+}
+.bulid__container { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+   
+}
+.bulid__content{
+    
+margin-top: 64px;
+}
+.bulid__title{
+    @include title_1
+}
+.bulid__list_box{
+    margin-bottom: 32px;
+    &::before{
+        margin-right: 23px;
+
+    }
+}
+.bulid__sub_title {
+    font-size: 15px;
+    line-height: 25px; 
+font-size: 18px;
+line-height: 28px;
+
+}
+
+
+}
+
+@media screen and (max-width:650px) {
+    .bulid {
+        padding: 64px 0;
+
+    }
+    .bulid__container { 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+       
+    }
+    
+    .bulid__content {
+        margin-top: 56px;
+        gap:56px
+    }
+    .bulid__list_box {
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        text-align: center;
+    }
+    
+}

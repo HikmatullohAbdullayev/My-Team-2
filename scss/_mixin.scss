@@ -1,0 +1,86 @@
+@mixin text_1{
+    color: #FFF;
+font-size: 15px;
+font-weight: 600;
+line-height: 25px; /* 166.667% */
+
+margin-top: 16px;
+max-width: 445px; 
+@media screen and (max-width:1000px) {
+    
+    margin: auto;
+font-size: 15px;
+margin-top: 16px;
+}
+
+@media screen and (max-width:650px){
+    margin-top: 8px;
+}
+}
+
+@mixin title_1{
+    
+    max-width: 445px;
+    color: #FFF;
+font-size: 48px;
+font-weight: 700;
+line-height: 48px;
+
+&::before{
+    content:"";
+    width: 50px;
+    height: 4px;
+    background-color:  #F67E7E;
+    display: block;
+    margin-bottom: 54px;
+    margin-top: -60px;
+
+@media screen and (max-width:1000px) {
+    
+font-size: 32px;
+line-height: 32px;}
+}
+}
+
+// =BULID-END=
+
+@mixin title_deliver{
+    
+    margin: auto;
+    max-width: 932px;
+    color: #FFF;
+font-size: 48px;
+font-weight: 700;
+line-height: 48px; 
+
+@media screen and (max-width:1000px) {
+    
+    max-width: 550px;
+    font-size: 32px;
+    line-height: 32px; 
+    
+}
+
+}
+
+@mixin text_dliver{
+
+
+    color: #FFF;
+font-size: 15px;
+font-weight: 600;
+line-height: 25px; 
+
+
+
+
+    @media screen and (max-width:1000px){
+        
+        max-width: 500px;
+font-size: 15px;
+line-height: 25px; 
+    }
+}
+
+// =DELIVER-END=
+
